@@ -6,7 +6,7 @@ import { Question, Questions, BaseQuestions, Option } from "../Bank";
 
 function Home() {
   const navigate = useNavigate();
-  const [questionId, setQuestionId] = useState(17);
+  const [questionId, setQuestionId] = useState(1);
   const [score, setScore] = useState(0);
 
   const question = getQuestionById(questionId);
