@@ -13,7 +13,7 @@ function Promo() {
         experience 🙂
       </p>
       <a
-        href="https://www.google.com"
+        href="https://forms.gle/Lq7q3jUfn8WAKi5x5"
         className="mx-auto px-4 py-2 rounded-2xl border-black bg-orange-500"
       >
         Click Here
