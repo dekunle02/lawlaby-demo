@@ -25,7 +25,7 @@ function Home() {
   }
 
   function handleNextClick() {
-    if (questionId < Questions.length) {
+    if (questionId !== Questions.length) {
       setQuestionId((prev) => prev + 1);
     } else {
       navigate(`/end?score=${score}`);
@@ -71,9 +71,9 @@ function Home() {
 
       {/* options */}
       <div className="flex flex-col content-start my-3 border divide-y">
-        {question.options.map((option) => (
+        {question.options.map((option, idx) => (
           <button
-            key={option.body.slice(0, 8)}
+            key={idx}
             className="py-5 px-3 text-start"
             onClick={(event) =>
               handleOptionClick(option, event.target as HTMLButtonElement)
