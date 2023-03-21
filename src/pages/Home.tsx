@@ -6,10 +6,10 @@ import { Question, Questions, BaseQuestions, Option } from "../Bank";
 
 function Home() {
   const navigate = useNavigate();
-  const [questionId, setQuestionId] = useState(1);
+  const [questionIdx, setQuestionIdx] = useState(0);
   const [score, setScore] = useState(0);
 
-  const question = getQuestionById(questionId);
+  const question = getQuestionByIdx(questionIdx);
 
   function handleOptionClick(o: Option, button: HTMLButtonElement) {
     if (o.isCorrect) {
@@ -25,16 +25,16 @@ function Home() {
   }
 
   function handleNextClick() {
-    if (questionId !== Questions.length) {
-      setQuestionId((prev) => prev + 1);
+    if (questionIdx !== Questions.length - 1) {
+      setQuestionIdx((prev) => prev + 1);
     } else {
       navigate(`/end?score=${score}`);
     }
   }
 
   function handlePreviousClick() {
-    if (questionId > 1) {
-      setQuestionId((prev) => prev - 1);
+    if (questionIdx > 0) {
+      setQuestionIdx((prev) => prev - 1);
     }
   }
 
@@ -52,7 +52,7 @@ function Home() {
 
       {/* top */}
       <div className="flex flex-row justify-between pr-2 items-center mb-2">
-        <span>{`${question.id} of ${Questions.length}`}</span>
+        <span>{`${questionIdx + 1} of ${Questions.length}`}</span>
         <button
           onClick={handleQuestionFlag}
           className="text-lg  text-orange-600"
@@ -97,8 +97,8 @@ function Home() {
   );
 }
 
-function getQuestionById(id: Number): Question | undefined {
-  const q = Questions.find((q) => q.id === id);
+function getQuestionByIdx(idx: number): Question | undefined {
+  const q = Questions[idx];
   if (q && q.parentId) {
     q.parent = BaseQuestions.find((b) => b.id === q.id);
   }

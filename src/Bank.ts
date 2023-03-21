@@ -1,18 +1,18 @@
 interface BaseQuestion {
-  id: Number;
-  body: String;
+  id: number;
+  body: string;
 }
 
 export interface Option {
-  body: String;
-  isCorrect?: Boolean;
+  body: string;
+  isCorrect?: boolean;
 }
 
 export interface Question {
-  id: Number;
-  parentId?: Number;
+  id: number;
+  parentId?: number;
   parent?: BaseQuestion;
-  body: String;
+  body: string;
   options: Option[];
 }
 
@@ -33,28 +33,28 @@ const BaseQuestions: BaseQuestion[] = [
 ];
 
 const Questions: Question[] = [
-  {
-    id: 1,
-    parentId: 1,
-    body: `Ideally who should prepare the document in respect of the transaction`,
-    options: [
-      { body: "Paul’s lawyer", isCorrect: false },
-      { body: "Elder Bakori's lawyer", isCorrect: true },
-      { body: "The Estate Agent", isCorrect: false },
-      { body: "None of the above", isCorrect: false },
-    ],
-  },
-  {
-    id: 2,
-    parentId: 1,
-    body: `Is the above transaction required to be by deed?`,
-    options: [
-      { body: "Yes", isCorrect: true },
-      { body: "No" },
-      { body: "It depends on the agreement of the parties" },
-      { body: "All of the above" },
-    ],
-  },
+  // {
+  //   id: 1,
+  //   parentId: 1,
+  //   body: `Ideally who should prepare the document in respect of the transaction`,
+  //   options: [
+  //     { body: "Paul’s lawyer", isCorrect: false },
+  //     { body: "Elder Bakori's lawyer", isCorrect: true },
+  //     { body: "The Estate Agent", isCorrect: false },
+  //     { body: "None of the above", isCorrect: false },
+  //   ],
+  // },
+  // {
+  //   id: 2,
+  //   parentId: 1,
+  //   body: `Is the above transaction required to be by deed?`,
+  //   options: [
+  //     { body: "Yes", isCorrect: true },
+  //     { body: "No" },
+  //     { body: "It depends on the agreement of the parties" },
+  //     { body: "All of the above" },
+  //   ],
+  // },
   {
     id: 3,
     body: `One of the following is not among the taxes to be paid during the perfection of the titles to a property:`,
@@ -65,23 +65,23 @@ const Questions: Question[] = [
       { body: "Capital gains tax" },
     ],
   },
-  {
-    id: 4,
-    body: "The chargeable gain is the;",
-    options: [
-      {
-        body: "Difference between the cost of the asset and the consideration received on its disposal",
-        isCorrect: true,
-      },
-      { body: "The whole sum realized after the sale of the asset" },
-      {
-        body: "The Sum that the FIRS directs to the chargeable gain after inspecting the property",
-      },
-      {
-        body: "It is a contribution therefore the vendor can choose the amount to pay",
-      },
-    ],
-  },
+  // {
+  //   id: 4,
+  //   body: "The chargeable gain is the;",
+  //   options: [
+  //     {
+  //       body: "Difference between the cost of the asset and the consideration received on its disposal",
+  //       isCorrect: true,
+  //     },
+  //     { body: "The whole sum realized after the sale of the asset" },
+  //     {
+  //       body: "The Sum that the FIRS directs to the chargeable gain after inspecting the property",
+  //     },
+  //     {
+  //       body: "It is a contribution therefore the vendor can choose the amount to pay",
+  //     },
+  //   ],
+  // },
   {
     id: 5,
     body: "All but one of these is true of a power of attorney:",
@@ -92,25 +92,25 @@ const Questions: Question[] = [
       { body: "It is a specie of a deed poll" },
     ],
   },
-  {
-    id: 6,
-    body: "In Revival and Republication of Will it may be done through – Sect 15 Wills Law Lagos State",
-    options: [
-      {
-        body: "A duly executed codicil with intention to revive the revoked Will",
-        isCorrect: true,
-      },
-      {
-        body: "Taking instructions to draft Will",
-      },
-      {
-        body: "Writing with a declaration to court of intention",
-      },
-      {
-        body: "None of the above… ",
-      },
-    ],
-  },
+  // {
+  //   id: 6,
+  //   body: "In Revival and Republication of Will it may be done through – Sect 15 Wills Law Lagos State",
+  //   options: [
+  //     {
+  //       body: "A duly executed codicil with intention to revive the revoked Will",
+  //       isCorrect: true,
+  //     },
+  //     {
+  //       body: "Taking instructions to draft Will",
+  //     },
+  //     {
+  //       body: "Writing with a declaration to court of intention",
+  //     },
+  //     {
+  //       body: "None of the above… ",
+  //     },
+  //   ],
+  // },
   {
     id: 7,
     parentId: 2,
@@ -138,16 +138,16 @@ const Questions: Question[] = [
     ],
   },
 
-  {
-    id: 9,
-    body: "Below are examples of documents which constitute good root of title except one",
-    options: [
-      { body: "Certificate of title" },
-      { body: "A deed of gift" },
-      { body: "Equitable mortgage", isCorrect: true },
-      { body: "Registered titles" },
-    ],
-  },
+  // {
+  //   id: 9,
+  //   body: "Below are examples of documents which constitute good root of title except one",
+  //   options: [
+  //     { body: "Certificate of title" },
+  //     { body: "A deed of gift" },
+  //     { body: "Equitable mortgage", isCorrect: true },
+  //     { body: "Registered titles" },
+  //   ],
+  // },
 
   {
     id: 10,
@@ -192,43 +192,43 @@ const Questions: Question[] = [
     ],
   },
 
-  {
-    id: 13,
-    parentId: 3,
-    body: "Which of the persons below is saddled with the responsibility of drafting the document required at the contract stage of the transaction",
-    options: [
-      {
-        body: "Mr. Rich-Boy’s Solicitor",
-        isCorrect: true,
-      },
-      { body: "Mrs. Rose’ Solicitor" },
-      {
-        body: "The two Solicitors acting together",
-      },
-      { body: "Registrar of deeds" },
-    ],
-  },
-  {
-    id: 14,
-    parentId: 3,
-    body: "One of the following does not apply after the contract stage:",
-    options: [
-      {
-        body: "Mr. Rich-Boy’s death will not affect the contract",
-      },
-      {
-        body: "Mr. Rose is automatically entitled to possession",
-        isCorrect: true,
-      },
+  // {
+  //   id: 13,
+  //   parentId: 3,
+  //   body: "Which of the persons below is saddled with the responsibility of drafting the document required at the contract stage of the transaction",
+  //   options: [
+  //     {
+  //       body: "Mr. Rich-Boy’s Solicitor",
+  //       isCorrect: true,
+  //     },
+  //     { body: "Mrs. Rose’ Solicitor" },
+  //     {
+  //       body: "The two Solicitors acting together",
+  //     },
+  //     { body: "Registrar of deeds" },
+  //   ],
+  // },
+  // {
+  //   id: 14,
+  //   parentId: 3,
+  //   body: "One of the following does not apply after the contract stage:",
+  //   options: [
+  //     {
+  //       body: "Mr. Rich-Boy’s death will not affect the contract",
+  //     },
+  //     {
+  //       body: "Mr. Rose is automatically entitled to possession",
+  //       isCorrect: true,
+  //     },
 
-      {
-        body: "Mr. Rose acquires an equity in respect of the property",
-      },
-      {
-        body: "Mr. Rich-Boy becomes a qualified trustee in respect of the property",
-      },
-    ],
-  },
+  //     {
+  //       body: "Mr. Rose acquires an equity in respect of the property",
+  //     },
+  //     {
+  //       body: "Mr. Rich-Boy becomes a qualified trustee in respect of the property",
+  //     },
+  //   ],
+  // },
   {
     id: 15,
     body: "Which of the following is not a feature of a deed?",
