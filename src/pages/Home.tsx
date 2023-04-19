@@ -100,7 +100,7 @@ function Home() {
 function getQuestionByIdx(idx: number): Question | undefined {
   const q = Questions[idx];
   if (q && q.parentId) {
-    q.parent = BaseQuestions.find((b) => b.id === q.id);
+    q.parent = BaseQuestions.find((b) => b.id === q.parentId);
   }
   return q;
 }
