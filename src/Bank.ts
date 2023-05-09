@@ -32,7 +32,7 @@ const BaseQuestions: BaseQuestion[] = [
   },
 ];
 
-const Questions: Question[] = [
+const _Questions: Question[] = [
   // {
   //   id: 1,
   //   parentId: 1,
@@ -257,6 +257,230 @@ const Questions: Question[] = [
       { body: "16 years" },
       { body: "21 years" },
       { body: "17 years" },
+    ],
+  },
+];
+
+const Questions: Question[] = [
+  {
+    id: 1,
+    body: `The most common order of the morphological changes at puberty is`,
+    options: [
+      {
+        body: "Menarche >Adrenarche>Thelarche>peak growth in height>growth spurt",
+      },
+      {
+        body: "Menarche> Adrenarche> Thelarche> growth spurt> peak growth in height",
+        isCorrect: true,
+      },
+      {
+        body: "Adrenarche> Menarche> Thelarche> growth spurt> peak growth in height",
+      },
+      {
+        body: "Growth spurt> Thelarche> Adrenarche> peak growth in height> Menarche",
+      },
+      {
+        body: "Peak growth in height>Adrenarche> Menarche>Thelarche>Growth spurt",
+      },
+    ],
+  },
+  {
+    id: 2,
+    body: `Polycystic Ovarian Syndrome PCOS`,
+    options: [
+      {
+        body: "Estradiol levels are high",
+      },
+      {
+        body: "There is increased sensitivity to insulin",
+      },
+      {
+        body: "If Ovulation can be induced, the chance of conception is high",
+      },
+      {
+        body: "Androstenedione level are high",
+        isCorrect: true,
+      },
+      {
+        body: "Sex-hormones binding globulin are increased",
+      },
+    ],
+  },
+  {
+    id: 3,
+    body: `During normal pregnancy;`,
+    options: [
+      {
+        body: "Estradiol is the principal circulating estrogen",
+      },
+      {
+        body: "The blood pressure falls in the second trimester",
+        isCorrect: true,
+      },
+      {
+        body: "Blood flow to the kidney increases by 25%",
+      },
+      {
+        body: "The pressure of the uterus on the diaphragm reduces the tidal volume causes dyspnea",
+      },
+      {
+        body: "The uterus dilate due to obstruction and increased intraluminal pressure",
+      },
+    ],
+  },
+  {
+    id: 4,
+    body: `The combined oral contraceptives;`,
+    options: [
+      {
+        body: "Predisposes to pelvic inflammatory disease",
+      },
+      {
+        body: "Predisposes to benign breast and ovarian cyst",
+      },
+      {
+        body: "Contains 0.2-0.5mg of ethinyl oestradiol",
+      },
+      {
+        body: "May be less effective in patients with epilepsy",
+        isCorrect: true,
+      },
+      {
+        body: "Works by causing an elevation in the output of FSH and LH",
+      },
+    ],
+  },
+  {
+    id: 5,
+    body: `Routine pregnancy tests`,
+    options: [
+      {
+        body: "Measures the quantity of B-HCG in urine",
+      },
+      {
+        body: "Measures the quantity of B-HCG in blood",
+      },
+      {
+        body: "Detects B-HCG in urine",
+        isCorrect: true,
+      },
+      {
+        body: "progesterone level in blood",
+      },
+      {
+        body: "Detects pregnancy associated plasma protein [PAPP] in blood",
+      },
+    ],
+  },
+  {
+    id: 6,
+    body: `Hypoplasia and yellow discoloration of the primary teeth has occurred in infants whose
+pregnant mothers were treated with`,
+    options: [
+      {
+        body: "Sulphonaudes",
+      },
+      {
+        body: "Penicillin",
+      },
+      {
+        body: "Streptomycin",
+      },
+      {
+        body: "Dihydrostretomycin",
+      },
+      {
+        body: "Tetracyclin",
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    id: 7,
+    body: `The function of estrogen include the following except`,
+    options: [
+      {
+        body: "Proliferation of the endomenrium and myometrial growth",
+      },
+      {
+        body: "Development of female secondary sexual characteristics",
+      },
+      {
+        body: "Thickening of the cervical mucous",
+        isCorrect: true,
+      },
+      {
+        body: "Maintains voice at high pitch",
+      },
+      {
+        body: "Promotes growth of breast ducts and pigmentation of the alveoli",
+      },
+    ],
+  },
+  {
+    id: 8,
+    body: `The following is true concerning the anatomy of the external genitalia except`,
+    options: [
+      {
+        body: "The labia majora are homologous of the scrotum in the males",
+      },
+      {
+        body: "There 4 openings in the vestibules",
+      },
+      {
+        body: "The clitoris is a small cylindrical erectile body",
+      },
+      {
+        body: "The fossa navicularis is between the fourchette and the vaginal orifices",
+      },
+      {
+        body: "The labia minora contains hair follicles",
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    id: 9,
+    body: `Correct use of condom`,
+    options: [
+      {
+        body: "Air should be squeezed out of the tip",
+      },
+      {
+        body: "It should not be tested by inflation",
+      },
+      {
+        body: "It should be rolled on erect penis",
+        isCorrect: true,
+      },
+      {
+        body: "K-Y jelly may be used for lubrication",
+      },
+      {
+        body: "It should be doubled",
+      },
+    ],
+  },
+  {
+    id: 10,
+    body: `Large placenta is seen in the following except;`,
+    options: [
+      {
+        body: " Intrauterine growth restriction",
+        isCorrect: true,
+      },
+      {
+        body: "Syphilis",
+      },
+      {
+        body: "Cytomegalovirus",
+      },
+      {
+        body: "Rubella",
+      },
+      {
+        body: "Rhesus isoimmunization",
+      },
     ],
   },
 ];
