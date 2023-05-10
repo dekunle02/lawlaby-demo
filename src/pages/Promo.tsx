@@ -13,7 +13,8 @@ function Promo() {
         experience 🙂
       </p>
       <a
-        href="https://forms.gle/Lq7q3jUfn8WAKi5x5"
+        // href="https://forms.gle/Lq7q3jUfn8WAKi5x5" lawlaby
+        href="https://forms.gle/QywDi8E3JHiKWtou8"
         className="mx-auto px-4 py-2 rounded-2xl border-black bg-orange-500"
       >
         Click Here
